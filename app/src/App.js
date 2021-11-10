@@ -1,5 +1,12 @@
+import React from 'react';
+import { Header } from './components/Header/Header'
+import { Searchbar } from './components/Search/Searchbar';
+import { FilterButton } from './components/Search/FilterButton'
+import { FilterButtonReset } from './components/Search/FilterButtonReset';
+import { FilterLoader } from './components/Search/FilterLoader';
 import './Reset.css';
 import './Body.css';
+
 
 function App() {
   return (
@@ -66,55 +73,17 @@ function App() {
 </svg>
 
         <div className="wrapper-content">
-            <div className="header">
-                <span className="header-title">Список заказов</span>
-                <button className="header__button">
-                    <svg className="page-header__icon">
-                        <use xlinkHref="#sun"></use>
-                    </svg>
-                    <span className="header__button__text">Светлая тема</span>
-                </button>
-            </div>
-
+            <Header />
             <div className="filter-row">
                 <div className="filter-row__search-row">
                     <form className="filter-row__form">
-
-                        <label className="filter-row__searchbar">
-                            <div className="searchbar">
-                                <div className="searchbar__search-area">
-                                    <svg className="searchbar__icon">
-                                        <use xlinkHref="#search"></use>
-                                    </svg>
-                                    <input className="searchbar__input-field" placeholder="Номер заказа или ФИО" />  
-                                </div>
-                                <button className="searchbar__button searchbar__button_end-line">
-                                    <svg className="searchbar__icon">
-                                        <use xlinkHref="#incorrect"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </label>
-
-
-                        <button className="filter-row__button">
-                            <svg className="filter-row__icon">
-                                <use xlinkHref="#filter"></use>
-                            </svg>
-                            <span className="filter-row__text-button">Фильтры</span>
-                        </button>
-
-                        <button className="filter-row__button-reset">
-                            <span className="filter-row__text-button">Сбросить фильтры</span>
-                        </button>
+                        <Searchbar />
+                        <FilterButton />
+                        <FilterButtonReset />
+                       
                     </form>
 
-                    <div className="filter-row__loader">
-                        <svg className="filter-row__icon-loader">
-                            <use xlinkHref="#refresh"></use>
-                        </svg>
-                        <span className="filter-row__text-loader">Загрузка</span>
-                    </div>
+                    <FilterLoader />
                 </div>
             
                 <div className="filter-row__row-inputs">
