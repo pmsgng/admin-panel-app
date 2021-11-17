@@ -1,0 +1,159 @@
+import React from "react";
+
+export const FilterRow = () => {
+    return (
+        <div className="filter-row__row-inputs">
+            <form className="filter-row__form">
+
+                <div className="filter-row__inputs">
+                    <label for="date" className="filter-row__input-title-text">Дата оформления</label>
+                    <div className="filter-row__inputs-wrap">
+                        <div className="filter-row__input-wrap">
+                            <span className="filter-row__from-to-text">с</span>
+                            <input id="date" className="filter-row__input" type="text" placeholder="dd.mm.dddd" value="20.01.2021" />
+                            <button className="filter-row__input-button">
+                                <svg className="filter-row__input-icon">
+                                    <use xlinkHref="#incorrect"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div className="filter-row__input-wrap">
+                            <span className="filter-row__from-to-text">по</span>
+                            <input className="filter-row__input" type="text" placeholder="dd.mm.dddd" />
+                            <button className="filter-row__input-button filter-row__input-button_disabled">
+                                <svg className="filter-row__input-icon">
+                                    <use xlinkHref="#incorrect"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="filter-row__inputs">
+                    <label for="status" className="filter-row__input-title-text">Статус заказа</label>
+                    <div className="filter-row__input-wrap">
+                        <input id="status" className="filter-row__input filter-row__input_dropdown" type="text" placeholder="Выберите статус" value="Любой" />
+                        <button className="filter-row__input-button">
+                            <svg className="filter-row__input-icon">
+                                <use xlinkHref="#v_arrow"></use>
+                            </svg>
+                        </button>
+
+                        <div className="dropdowns__column">
+                            <form className="dropdowns__form">
+                                <ul className="dropdowns__list">
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Новый</span>
+                                        </label>
+                                    </li>
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Рассчет</span>
+                                        </label>
+                                    </li>
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Подтверждён</span>
+                                        </label>
+                                    </li>
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Отложен</span>
+                                        </label>
+                                    </li>
+
+
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Выполнен</span>
+                                        </label>
+                                    </li>
+
+
+                                    <li className="dropdowns__item">
+                                        <label className="dropdowns__control">
+                                            <div className="dropdowns__checkbox-pair">
+                                                <input type="checkbox" className="dropdowns__checkbox" />
+                                                <svg className="dropdowns__checkbox-icon">
+                                                    <use xlinkHref="#checkmark"></use>
+                                                </svg>
+                                            </div>
+                                            <span className="dropdowns__item-text">Отменен</span>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="filter-row__inputs">
+                    <label for="sum" className="filter-row__input-title-text">Сумма заказа</label>
+                    <div className="filter-row__inputs-wrap">
+                        <div className="filter-row__input-wrap">
+                            <span className="filter-row__from-to-text">от</span>
+                            <input id="sum" className="filter-row__input" type="text" value="5000" />
+                            <button className="filter-row__input-button">
+                                <svg className="filter-row__input-icon">
+                                    <use xlinkHref="#incorrect"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div className="filter-row__input-wrap">
+                            <span className="filter-row__from-to-text">до</span>
+                            <input className="filter-row__input" type="text" />
+                            <button className="filter-row__input-button filter-row__input-button_disabled">
+                                <svg className="filter-row__input-icon">
+                                    <use xlinkHref="#incorrect"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="filter-row__form-button">
+                    <button className="filter-row__button">
+                        <span className="filter-row__text-button">Применить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    )
+}
