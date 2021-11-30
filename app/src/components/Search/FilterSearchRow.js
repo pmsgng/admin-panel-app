@@ -9,12 +9,12 @@ export const FilterSearchRow = () => {
         <div className="filter-row__search-row">
                 <form className="filter-row__form">
                     <Searchbar />
-                    <FilterButton />
-                    <FilterButtonReset />
+                    <FilterButton buttonText='Фильтры'/>
+                    <FilterButtonReset buttonText='Сбросить фильтры'/>
                     
                 </form>
 
-                <FilterLoader />
+                <FilterLoader buttonText='Загрузка'/>
         </div>
     )
 }

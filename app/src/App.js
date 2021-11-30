@@ -2,9 +2,9 @@ import React from 'react';
 import { Header } from './components/Header/Header'
 import { FilterSearchRow } from './components/Search/FilterSearchRow'
 import { FilterRow } from './components/Filter/FilterRow';
-import { TableHeader } from './components/Table/TableHeader';
-import { TableBody } from './components/Table/TableBody';
-import { TableFooter } from './components/Table/TableFooter';
+import { TableHeader } from './components/Table/TableHeader/TableHeader';
+import { TableBody } from './components/Table/TableBody/TableBody';
+import { TableFooter } from './components/Table/TableFooter/TableFooter';
 import './Reset.css';
 import './Body.css';
 
@@ -74,7 +74,7 @@ function App() {
             </svg>
 
             <div className="wrapper-content">
-                <Header />
+                <Header title='Список заказов'/>
                 <div className="filter-row">
                     <FilterSearchRow />
 
