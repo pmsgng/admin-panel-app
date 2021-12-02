@@ -1,12 +1,12 @@
 import React from "react";
 
-export const ButtonMode = () => {
+export const ButtonMode = ({buttonText}) => {
     return (
         <button className="header__button">
             <svg className="page-header__icon">
                 <use xlinkHref="#sun"></use>
             </svg>
-            <span className="header__button__text">Светлая тема</span>
+            <span className="header__button__text">{buttonText}</span>
         </button>
     )
 }

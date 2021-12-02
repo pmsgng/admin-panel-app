@@ -216,17 +216,8 @@ svg {
     align-items: center;
     width: 6.875rem;
     height: 2rem;
-    cursor: pointer;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
-}
-.filter-row__loader:hover {
-    box-shadow: 0 0.5rem 1rem 0 var(--background-admin-panel-light);
-    transform: translateY(-0.1rem);
-}
-.filter-row__loader:active {
-    box-shadow: none;
-    transform: translateY(0rem);
 }
 .filter-row__icon-loader {
     display: flex;
