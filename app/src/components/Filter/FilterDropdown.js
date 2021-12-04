@@ -1,4 +1,5 @@
 import React from "react";
+import { DropdownItem } from "./DropdownItem";
 
 export const FilterDropdown = () => {
     return (
@@ -6,80 +7,13 @@ export const FilterDropdown = () => {
             <form className="dropdowns__form">
                 <ul className="dropdowns__list">
 
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Новый</span>
-                        </label>
-                    </li>
+                    <DropdownItem itemText="Новый" />
+                    <DropdownItem itemText="Расчёт" />
+                    <DropdownItem itemText="Подтверждён" />
+                    <DropdownItem itemText="Отложен" />
+                    <DropdownItem itemText="Выполнен" />
+                    <DropdownItem itemText="Отменен" />
 
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Рассчет</span>
-                        </label>
-                    </li>
-
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Подтверждён</span>
-                        </label>
-                    </li>
-
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Отложен</span>
-                        </label>
-                    </li>
-
-
-
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Выполнен</span>
-                        </label>
-                    </li>
-
-
-                    <li className="dropdowns__item">
-                        <label className="dropdowns__control">
-                            <div className="dropdowns__checkbox-pair">
-                                <input type="checkbox" className="dropdowns__checkbox" />
-                                <svg className="dropdowns__checkbox-icon">
-                                    <use xlinkHref="#checkmark"></use>
-                                </svg>
-                            </div>
-                            <span className="dropdowns__item-text">Отменен</span>
-                        </label>
-                    </li>
                 </ul>
 
             </form>

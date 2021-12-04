@@ -69,7 +69,7 @@ export const FilterRow = () => {
                     </div>
                 </div>
                 <div className="filter-row__form-button">
-                    <button className="filter-row__button">
+                    <button type="button" className="filter-row__button">
                         <span className="filter-row__text-button">Применить</span>
                     </button>
                 </div>

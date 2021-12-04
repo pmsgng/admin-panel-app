@@ -1,9 +1,23 @@
 import React from "react";
+import { OrderItem } from "./OrderItem";
+import userList from '../../../data-mock/usersList.json'
 
 export const TableBody = () => {
+
+    const orderRow = userList.map((user) => {
+        <OrderItem>{orderNum='',
+            orderDate,
+            orderStatus,
+            orderSum,
+            orderCoast,
+            customer}</OrderItem>
+    })
     return (
         <div className="table__body table-body">
             <div className="table-body__customer-list">
+
+
+
                 <label className="table-body__order-row">
                     <div className="table-body__checkbox-wrap">
                         <div className="table-body__checkbox-pair">
