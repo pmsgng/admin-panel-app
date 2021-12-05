@@ -1,11 +1,19 @@
 import React from "react";
 import { Checkbox } from "../../Checkbox/Checkbox";
-import userList from '../../../data-mock/usersList.json'
 
-export const OrderItem = () => {
+export const OrderItem = ({
+    orderNum,
+    orderDate,
+    orderStatus,
+    orderSum,
+    orderCoast,
+    customer,
+}) => {
+
+
     return (
         <label className="table-body__order-row">
-            <Checkbox/>
+            <Checkbox />
             <div className="table-body__order-num-wrap">
                 <span className="table-body__cell-text">{orderNum}</span>
             </div>

@@ -8,6 +8,7 @@ import { TableFooter } from './components/Table/TableFooter/TableFooter';
 import './Reset.css';
 import './Body.css';
 
+const initialState = 0;
 
 function App() {
     return (
@@ -73,6 +74,7 @@ function App() {
                 </symbol>
             </svg>
 
+           
             <div className="wrapper-content">
                 <Header title='Список заказов'/>
                 <div className="filter-row">
