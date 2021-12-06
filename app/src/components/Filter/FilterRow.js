@@ -11,7 +11,7 @@ export const FilterRow = () => {
                     <div className="filter-row__inputs-wrap">
                         <div className="filter-row__input-wrap">
                             <span className="filter-row__from-to-text">с</span>
-                            <input id="date" className="filter-row__input" type="text" placeholder="dd.mm.dddd" value="20.01.2021" />
+                            <input id="date" className="filter-row__input" type="data" placeholder="dd.mm.dddd" value="20.01.2021" />
                             <button className="filter-row__input-button">
                                 <svg className="filter-row__input-icon">
                                     <use xlinkHref="#incorrect"></use>
@@ -20,7 +20,7 @@ export const FilterRow = () => {
                         </div>
                         <div className="filter-row__input-wrap">
                             <span className="filter-row__from-to-text">по</span>
-                            <input className="filter-row__input" type="text" placeholder="dd.mm.dddd" />
+                            <input className="filter-row__input" type="data" placeholder="dd.mm.dddd" />
                             <button className="filter-row__input-button filter-row__input-button_disabled">
                                 <svg className="filter-row__input-icon">
                                     <use xlinkHref="#incorrect"></use>

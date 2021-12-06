@@ -8,7 +8,6 @@ import { TableFooter } from './components/Table/TableFooter/TableFooter';
 import './Reset.css';
 import './Body.css';
 
-const initialState = 0;
 
 function App() {
     return (
